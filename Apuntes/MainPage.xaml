@@ -20,6 +20,10 @@
                 Text="Bienvenido A Mi Primera APP .Net MAUII"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <Label
+                Text="Mi Nombre es Eduardo Salazar"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level5" />
 
             <Label
                 Text="Esta pagina tiene la principal funcion de presentar el proyecto a nuevos usuarios"
@@ -30,6 +34,7 @@
                 Text="No hagas click en el boton de abajo"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level3" />
+            
 
             <Button
                 x:Name="btnPrincipal"

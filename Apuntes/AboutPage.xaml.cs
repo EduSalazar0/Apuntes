@@ -2,15 +2,13 @@ namespace Apuntes;
 
 public partial class AboutPage : ContentPage
 {
-	public AboutPage()
-	{
-        InitializeComponent();
-	}
-
-
-    private async void LearnMore_Clicked(object sender, EventArgs e)
+    public AboutPage()
     {
-        // Navigate to the specified URL in the system browser.
-        await Launcher.Default.OpenAsync("https://aka.ms/maui");
+        InitializeComponent();
+    }
+
+    private void btnClicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new MainPage());
     }
 }

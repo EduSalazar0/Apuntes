@@ -2,16 +2,43 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Apuntes.AboutPage">
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Image Source="dotnet_bot.png"
-                   SemanticProperties.Description="The dot net bot waving hello!"
-                   HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="Notes" VerticalOptions="End" />
-            <Label FontSize="22" Text="v1.0" VerticalOptions="End" />
-        </HorizontalStackLayout>
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Padding="20"
+        Spacing="10">
+        <Image
+            Source="icon3garrotez.jpg"
+            HeightRequest="185"
+            Aspect="AspectFit"
+            HorizontalOptions="Center" 
+            VerticalOptions="Center"/>
 
-        <Label Text="This app is written in XAML and C# with .NET MAUI." />
-        <Button Text="Learn more..." Clicked="LearnMore_Clicked" />
+        <Label
+            Text="Hola mi nombre es Eduardo Salazar"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center" 
+            SemanticProperties.HeadingLevel="Level1" />
+        <Label
+            Text="Soy un joven oriundo de Riobamba, que busca entender el sentido de la vida y llenar el vacio con cosas positivas y productivas"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            SemanticProperties.HeadingLevel="Level1" />
+
+        <Label
+            Text="Me considero una persona alegre y abierta con los demas aunque en un principio me cueste un poco el abrirme a los demas"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            SemanticProperties.HeadingLevel="Level1"/>
+        <Label 
+            Text="considero que cuando desarrollo y pongo en practica mis habilidades sociales, entablo relaciones muy buenas y duraderas"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            SemanticProperties.HeadingLevel="Level1"/>
+        <Button
+            x:Name="btnVolver"
+            Text="Volver al inicio"
+            Clicked="btnClicked"
+            HorizontalOptions="Fill"/>
     </VerticalStackLayout>
 </ContentPage>
