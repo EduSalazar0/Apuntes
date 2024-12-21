@@ -3,6 +3,7 @@
     x:Class="Apuntes.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Apuntes.Views"
     xmlns:local="clr-namespace:Apuntes"
     Title="Apuntes">
 
@@ -10,7 +11,7 @@
     <FlyoutItem Title="Apuntes" Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}">
         <!-- Tabs dentro del Flyout -->
         <Tab Title="Inicio">
-            <ShellContent Title="Apuntes" ContentTemplate="{DataTemplate local:MainPage}" />
+            <ShellContent Title="Apuntes" ContentTemplate="{DataTemplate views:AllNotesPage}" />
             <ShellContent Title="About" ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </FlyoutItem>
